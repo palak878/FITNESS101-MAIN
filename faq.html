@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: url('images/cool.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.85);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      display: inline;
+      font-size: 24px;
+      margin-left: 10px;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropbtn {
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: white;
+      min-width: 120px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      padding: 10px;
+      display: block;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    nav {
+      background: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      font-weight: 500;
+    }
+
+    nav a.active {
+      color: #e67e22;
+      border-bottom: 2px solid #e67e22;
+      padding-bottom: 4px;
+    }
+
+    .page-heading {
+      text-align: center;
+      margin: 40px auto 10px;
+      font-size: 28px;
+      border-left: 5px solid #e67e22;
+      border-right: 5px solid #e67e22;
+      display: inline-block;
+      padding: 10px 30px;
+      background: rgba(255,255,255,0.7);
+    }
+
+    .subheading {
+      text-align: center;
+      font-style: italic;
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: #000;
+    }
+
+    .faq-container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+      background: rgba(255,255,255,0.95);
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .faq-section {
+      margin-bottom: 40px;
+    }
+
+    .heading {
+      font-size: 22px;
+      margin-bottom: 20px;
+      font-weight: 600;
+      color: #e67e22;
+    }
+
+    details {
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 15px;
+      background: #f9f9f9;
+      transition: all 0.3s;
+    }
+
+    details:hover {
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    summary {
+      font-weight: 600;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .text {
+      margin-top: 10px;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .faq-container {
+        margin: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div>
+      <a href="homepage.html">
+        <img src="images/logo.png" width="35" height="30">
+        <h1>FITNESS 101</h1>
+      </a>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn"><img src="images/user.png" width="40" height="40"></button>
+      <div class="dropdown-content">
+        <a href="index.php">Log-In</a>
+        <a href="register.php">Sign-Up</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="homepage.html">Home</a>
+    <a href="health.html">Healthy Living</a>
+    <a class="active" href="faq.html">FAQ</a>
+    <a href="contactus.html">Contact Us</a>
+    <a href="help.php">Help</a>
+    <a href="member.php">Member's Area</a>
+  </nav>
+
+  <!-- Page Heading -->
+  <h3 class="page-heading">FREQUENTLY ASKED QUESTIONS</h3>
+  <p class="subheading">Asked by you, answered by us.</p>
+
+  <!-- FAQ Content -->
+  <div class="faq-container">
+    <div class="faq-section">
+      <p class="heading">WARM UP: Before</p>
+      <details>
+        <summary>Is working out in the morning better for you?</summary>
+        <p class="text">You should exercise at a time that suits you and your body. There’s no evidence to suggest that an early morning workout is better for you, but some people are just more efficient at this time.</p>
+      </details>
+      <details>
+        <summary>Should I approach my sessions with a plan?</summary>
+        <p class="text">Yes, this will help you get the most out of your workout. Decide which muscle groups you want to work on...</p>
+      </details>
+      <details>
+        <summary>Do I need to work out every day?</summary>
+        <p class="text">A good workout week doesn’t necessarily mean training every day. Three to four gym or home workouts each week is enough...</p>
+      </details>
+      <details>
+        <summary>For how long do I need to work out?</summary>
+        <p class="text">This depends on your fitness levels, what type of training you’re doing and what intensity you’re training at...</p>
+      </details>
+      <details>
+        <summary>Do I need to vary my workout to see results?</summary>
+        <p class="text">If you want to see real change in your body you need to mix up your routine...</p>
+      </details>
+      <details>
+        <summary>How do I get a six-pack?</summary>
+        <p class="text">Doing 100 sit-ups a day won’t guarantee a defined set of abs; you’ll need to do a combination of things...</p>
+      </details>
+    </div>
+
+    <div class="faq-section">
+      <p class="heading">COOL DOWN: After</p>
+      <details>
+        <summary>How often do I need to rest?</summary>
+        <p class="text">Ensure you have at least one rest day per week to allow your body to regenerate and repair...</p>
+      </details>
+      <details>
+        <summary>When should I stretch and how often?</summary>
+        <p class="text">Start with some dynamic stretching before a workout. Then, do static stretches such as a standing thigh stretch or side lunge post-workout...</p>
+      </details>
+      <details>
+        <summary>How does exercise help mental health?</summary>
+        <p class="text">Research has shown that exercise can help to reduce stress, improve your self-confidence, alleviate anxiety and improve concentration...</p>
+      </details>
+      <details>
+        <summary>What’s the best way to help sore muscles?</summary>
+        <p class="text">Diet plays a vital role in the rate at which your body can recover – protein is crucial...</p>
+      </details>
+      <details>
+        <summary>How and when do I need to use a foam roller?</summary>
+        <p class="text">Foam rolling acts as a deep tissue massage, which will help to improve mobility and flexibility...</p>
+      </details>
+      <details>
+        <summary>Any proper way to breathe during sport?</summary>
+        <p class="text">You should never hold your breath when doing sport. Often, breathe in during the prep phase, and out during effort...</p>
+      </details>
+    </div>
+  </div>
+
+</body>
+</html>
